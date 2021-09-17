@@ -1,1 +1,86 @@
-<mxfile host="app.diagrams.net" modified="2021-09-17T07:26:54.807Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" version="15.2.9" etag="j7G3yvjChx92ryO_rhBO" type="github"><diagram id="t0PXTB8Y1QMJsAM3QO2Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-17T16:45:45.744Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36" etag="gWg9X8p-TcvuqezaUyOP" version="15.2.9" type="github">
+  <diagram id="t0PXTB8Y1QMJsAM3QO2Z" name="Page-1">
+    <mxGraphModel dx="1038" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="STSp24XYcY5i-s3CLKXL-1" value="Ar" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=#006666;strokeColor=#005700;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-2" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Artificial Intelligence&lt;br&gt;(AI)&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="105" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-7" value="" style="line;strokeWidth=2;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;fontColor=#FFFFFF;fillColor=#006666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="520" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-8" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="230" as="sourcePoint" />
+            <mxPoint x="160" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="250" />
+              <mxPoint x="160" y="260" />
+              <mxPoint x="160" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-9" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="413.00000000000006" y="230" as="sourcePoint" />
+            <mxPoint x="413.00000000000006" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="413.00000000000006" y="250" />
+              <mxPoint x="413.00000000000006" y="260" />
+              <mxPoint x="413.17" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-10" value="&lt;span style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;&lt;b style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 15px ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=#FFFFFF;strokeColor=#005700;fontColor=#ffffff;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-11" value="Ar" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=#FFFFFF;strokeColor=#005700;fontColor=#ffffff;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="290" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-14" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Artificial General &lt;br&gt;Intelligence (AGI)&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=black;" vertex="1" parent="1">
+          <mxGeometry x="90" y="315" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-16" value="&lt;b style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 15px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Narrow Artificial&lt;br&gt;Intelligence&amp;nbsp;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=black;" vertex="1" parent="1">
+          <mxGeometry x="345" y="315" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-17" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeWidth=2;rounded=1;entryX=0.498;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="STSp24XYcY5i-s3CLKXL-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419.5" y="370" as="sourcePoint" />
+            <mxPoint x="420" y="435" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="419.5" y="390" />
+              <mxPoint x="419.5" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-19" value="Ar" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=#FFFFFF;strokeColor=#005700;fontColor=#ffffff;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-20" value="&lt;b style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 15px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255)&quot;&gt;Virtual assistants&lt;br&gt;Diagnose of cancer&amp;nbsp;&lt;br&gt;Self-driving cars&lt;br&gt;Automatic translator etc&lt;br&gt;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=black;" vertex="1" parent="1">
+          <mxGeometry x="325" y="450" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-22" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="230" as="sourcePoint" />
+            <mxPoint x="680" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="250" />
+              <mxPoint x="680" y="260" />
+              <mxPoint x="680" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-23" value="&lt;span style=&quot;background-color: rgb(0 , 0 , 0)&quot;&gt;&lt;b style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 15px ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=#FFFFFF;strokeColor=#005700;fontColor=#ffffff;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="290" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="STSp24XYcY5i-s3CLKXL-24" value="&lt;span style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;Artificial Super &lt;br&gt;Intelligence (ASI)&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontColor=black;" vertex="1" parent="1">
+          <mxGeometry x="610" y="310" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
