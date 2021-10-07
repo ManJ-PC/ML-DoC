@@ -40,9 +40,11 @@
 %% Uncomment the next lines if side by side graphics used
 %\usepackage[lofdepth,lotdepth]{subfig}
 %\usepackage{graphicx}
-%\usepackage{float}
+\usepackage{float}
 
 %% Include color package
+\usepackage[table]{xcolor} % new
+\usepackage{xcolor} % added for color table
 \usepackage{color}
 \definecolor{cloudwhite}{cmyk}{0,0,0,0.025}
 
@@ -92,7 +94,7 @@
 %%----------------------------------------
 %% Information about the work
 %%----------------------------------------
-\title{Machine learning and Data analysis about Disentangling Disorders of Consciousness}
+\title{Machine learning in the diagnosis of disorders of consciousness using SMART}
 \author{Manuel Curral}
 
 
@@ -100,9 +102,11 @@
 %\thesisdate{July 31, 2008}
 
 %%C>omment next line for copyright text if used
-\copyrightnotice{Manuel José Pereira Curral, 2020}
+\copyrightnotice{Manuel José Pereira Curral, 2021}
 
 \supervisor{Supervisor}{Professor Doutor Jaime Cardoso}
+\supervisor{Co-Supervisor}{Professora Liliana Teixeira}
+\supervisor{Co-Supervisor}{Professor Doutor Nuno Rocha}
 %% Comment next line for copyright text if not used
 
 
@@ -125,7 +129,7 @@
 \logo{uporto-feup.pdf}
 
 %% Uncomment next line for additional text below the author's name (front page)
-\additionalfronttext{Preparação da Dissertação}
+\additionalfronttext{}
 
 %%----------------------------------------
 %% Preliminary materials

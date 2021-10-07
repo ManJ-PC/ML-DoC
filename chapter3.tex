@@ -1,199 +1,316 @@
-\chapter{Another Chapter}\label{chap:chap3}
+\chapter{Machine Learning, a field of AI}\label{chap:chap3}
 
 \section*{}
 
-Artificial Intelligence is a scientific discipline whose  fundamental aim  is to develop computational systems more useful and capable of showing operational Behaviours to reach the same objectives that make people seem intelligent behind the study of those processes/principle that make computers to execute tasks that are similar to those of the humans in stereotyped  situations and  more effective.  
-Techniques of programming used, like non-deterministic search, are based, at least partially, on declarative languages, namely logic-based, functional or at least, object-oriented.
+\paragraph{}Machine Learning is a subfield of Artificial Intelligence (AI), a branch of computer science whose  fundamental aim is to develop computational systems (smart machines) that show operational behaviour and are capable of performing tasks that typically require human intelligence \citet{Spalding1981}. Those algorithms often exceed the capabilities of human at doing thise tasks.
 
-
-
-\section{A Section with an Equation}
-
-In suscipit mauris a nunc. Pellentesque gravida. Morbi quam
-lacus, pretium eget, tincidunt vulputate, interdum sed,
-turpis. Curabitur quis est.
-
-Duis tempor condimentum ante:
-\begin{eqnarray}
-CIF_1: \hspace*{5mm}F_0^j(a) &=& \frac{1}{2\pi \iota} \oint_{\gamma} \frac{F_0^j(z)}{z - a} dz\\
-CIF_2: \hspace*{5mm}F_1^j(a) &=& \frac{1}{2\pi \iota} \oint_{\gamma} \frac{F_0^j(x)}{x - a} dx \label{eq:cif}
-\end{eqnarray}
-
-Equation~\ref{eq:cif}  
-
-\begin{itemize}
-\item \textbf{Componentes} --- Suspendisse auctor mattis augue \emph{push};
-\item \textbf{Praesent} --- Sit amet sem maecenas eleifend facilisis leo;
-\item \textbf{Pellentesque} --- Habitant morbi tristique senectus et netus.
-\end{itemize}
-
-\subsection{A Subsection with a Figure}
-
-In est justo, tristique in Figure~\ref{fig:arch} %on page~\pageref{fig:arch}
-iverra ultricies, accumsan cursus,
-
-\begin{figure}[t]
-  \begin{center}
-    \leavevmode
-    \includegraphics[width=0.86\textwidth]{puzzle}
-    \caption{Proposed Architecture}
-    \label{fig:arch}
-  \end{center}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/ai.jpg}\citet{ai}
+    \caption{Machine learning and directly related areas}
+    \label{fig:ML}
 \end{figure}
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
+\section{Historical Perspective}
+\paragraph{}The field of AI began in the 1940s with Alan Turing, an  English mathematician and computer scientist. Who is widely know as the father of Artificial Intelligence and Computer Science \citet{beavers2013alan}.
+His outstanding achievements include: 
+\begin{itemize}
+\item  Cracking the Enigma code which,  according to Keegan, was allegedly decisive in the course of the Second World War. As a result the war was significantly shortened and cracking the Enigma code contributed to the known outcome \citet{Keegan2003}. 
+\item Inventing of the first model for the general-purpose computers: Turing machine \cite{Booker_turingand}
+\item Creating the Turing test, currently used, to find out whether an intelligent agent is capable of thinking like a human being. Through a conversation in natural language between a human and a computer, a human evaluator has to try to distinguish the computer from the human. When this happens, the test is negative. Else, it means that a computational system achieves a human-like level of artificial intelligence \citet{Bowen2016}.
+\end{itemize}\espaco
 
-Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Fusce feugiat, elit ac placerat
-fermentum, augue nisl ultricies eros, id fringilla enim sapien eu
-felis. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia Curae; Sed dolor mi, porttitor quis,
-condimentum sed luctus. 
+Up to this moment applications have been developed in the Narrow AI branch, this means that AI tries to perform well on one task, rather than strive for human intelligence, named Artificial General Intelligence (AGI) or beyond the best human brains of that, named Artificial Super Intelligence (ASI).
 
-\subsection{Another subsection with  Tables}
+\iffalse
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/AIBranchs.png}
+    \caption{Types of AI}
+    \label{fig:AIt}
+\end{figure}
+\fi
 
-Aenean rhoncus mauris sed ante tincidunt efficitur. Nam quis turpis
-eleifend, rutrum nunc quis, interdum ipsum Table~\ref{tab:exemplo1}.
-Suspendisse at sem nibh. Donec dapibus, lorem non faucibus dictum,
-dolor sem porta mauris, id blandit nisl mi nec urna.
-Suspendisse pretium diam massa Table~\ref{tab:exemplo2},
-id tincidunt enim fringilla non. Ut posuere purus tortor, a dignissim
-felis tempus gravida. Donec a facilisis nisi. Aliquam pulvinar lectus
-sit amet libero fermentum, id blandit neque imperdiet. Phasellus
-consequat blandit lacus ut bibendum. Integer eleifend condimentum
-purus, vitae porttitor est. Ut vel ultrices nulla, quis volutpat quam.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/AItypes.png}
+    \caption{Types of AI}
+    \label{fig:AIty}
+\end{figure}
 
-\begin{table}[t]
-  \centering
-  \caption{A Simple Table}
-\begin{tabular}{| l | l |}
-	\hline
-\textbf{Acronym} & \textbf{Description}\\
-	\hline
-	\hline
-        ADT   & \emph{Abstract Data Type}\\\hline
-        ANDF  & \emph{Architecture-Neutral Distribution Format}\\\hline
-        API   & \emph{Application Programming Interface}\\
-	\hline
-\end{tabular}
-  \label{tab:exemplo1}
-\end{table}
 
-Integer quis pede. Fusce nibh. Fusce nec erat vel mi condimentum
-convallis. Sed at tortor non mauris pretium aliquet. In in lacus in
-dolor molestie dapibus. Suspendisse potenti. Pellentesque sagittis
-porta erat. Mauris sodales sapien id augue. Nam eu dolor. Donec sit
-amet turpis non orci rhoncus commodo. Etiam condimentum commodo
-libero.
 
-Mauris pede. Curabitur faucibus dictum nibh. Proin tincidunt diam
-vitae mauris. Sed hendrerit dolor vel ipsum. Nullam dapibus. Vivamus
-tellus diam, egestas sit amet, vulputate non, vulputate id, eros. Nunc
-sit amet nibh eget nibh imperdiet ornare. Cras vehicula mattis
-ipsum. Sed diam arcu, semper at, gravida vitae, fermentum et,
-nulla. Aenean massa orci, tristique nec, rutrum id, fringilla eget,
-erat. Curabitur nulla ipsum, aliquam sed, rutrum vitae, semper quis,
-ante. Fusce at nunc in dolor condimentum tempor. Duis sit amet massa. 
 
-Curabitur convallis nulla quis risus. Nulla mollis porttitor
-purus. Fusce ultricies odio at ligula pellentesque suscipit. Nulla
-velit libero, blandit a, aliquet quis, hendrerit id, arcu. Phasellus
-porttitor porttitor purus. Suspendisse velit tortor, fringilla sit
-amet, commodo a, ultrices et, mi. Donec eu metus in erat ornare
-adipiscing. Praesent varius mi ac nunc. Vestibulum leo lacus,
-elementum in, vestibulum sit amet, hendrerit at, justo. Sed sit amet
-neque. Donec libero risus, commodo sit amet, dignissim ut, tincidunt
-a, eros. Ut non lacus quis tortor mattis ullamcorper. Vivamus
-consequat augue vel erat. Sed tincidunt. Sed leo eros, ornare a,
-pulvinar non, mattis quis, nibh. Aliquam faucibus mi ac nisi.
+To reach the same objectives that make people seem intelligent, behind the study of those processes/principles that make computers execute tasks similar to those of humans in stereotyped situations and  more effectively  \citet{russell2016artificial}.  
+Programming techniques, like nondeterministic search, are based, at least partially, on declarative languages, namely logic-based, functional or object-oriented.
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada
-fames ac turpis egestas. Duis aliquet, libero sit amet ornare viverra,
-augue erat interdum dolor, vitae tincidunt lorem erat a lacus. Sed
-lectus nisi, auctor in, hendrerit a, molestie vel, lectus. Cum sociis
-natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-mus. Duis lacinia tempor dui. Vivamus rhoncus, tellus a viverra
-dignissim, pede dui adipiscing odio, non faucibus metus mi gravida
-eros. Nullam a tellus ut velit elementum tempus. Aenean rutrum
-convallis tellus. Vestibulum nulla ante, dapibus ut, lobortis ut,
-varius sed, nisl. Fusce lobortis. Sed ac lorem. Nulla tincidunt nulla
-eget leo. Maecenas ac lectus eu neque ultrices pharetra. Curabitur a
-risus nec arcu placerat tempor. Suspendisse magna nisl, viverra a,
-adipiscing eget, ornare ultricies, ligula. Maecenas eu ligula vitae
-eros convallis dignissim. 
 
-\begin{table}[t]
-  \centering
-  \caption{A more Complex Table}
-\begin{tabular}{|c|r@{.}lr@{.}lr@{.}l||r|}
-	\hline
-\multicolumn{8}{|c|}
-	{\rule[-3mm]{0mm}{8mm}Iteration  $k$ of $f(x_n)$} \\
-\textbf{\em k}
-	& \multicolumn{2}{c}{$x_1^k$}
-	& \multicolumn{2}{c}{$x_2^k$}
-	& \multicolumn{2}{c||}{$x_3^k$}
-	& comments \\ \hline \hline
-0   & -0&3        & 0&6        &  0&7         & - \\
-1   &  0&47102965 & 0&04883157 & -0&53345964  & $\delta<\epsilon$ \\
-2   &  0&49988691 & 0&00228830 & -0&52246185  & $\delta < \varepsilon$ \\
-3   &  0&49999976 & 0&00005380 & -0&523656    &   $N$ \\
-4   &  0&5        & 0&00000307 & -0&52359743  & \\
-\vdots	& \multicolumn{2}{c}{\vdots}
-	& \multicolumn{2}{c}{$\ddots$}
-	& \multicolumn{2}{c||}{\vdots}  & \\
-7   &  0&5   & 0&0    & \textbf{-0}&\textbf{52359878}
-		 & $\delta<10^{-8}$ \\ \hline
-\end{tabular}
-  \label{tab:exemplo2}
-\end{table}
+\subsection{The evolution of AI in board games}
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna.  Cras vehicula mattis
-ipsum. Sed diam arcu, semper at, gravida vitae, fermentum et,
-nulla. Aenean massa orci, tristique nec, rutrum id, fringilla eget,
-erat. Curabitur nulla ipsum, aliquam sed, rutrum vitae, semper quis,
-ante. Fusce at nunc in dolor condimentum tempor
 
-Duis eget diam. In est justo, tristique in, lacinia vel, feugiat eget,
-quam. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Fusce feugiat, elit ac placerat
-fermentum, augue nisl ultricies eros, id fringilla enim sapien eu
-felis. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia Curae; Sed dolor mi, porttitor quis,
-condimentum sed luctus. 
+\paragraph{} The theory of neural network (NN) began in 1943 using electrical circuits as a nerve cell with a logic gate with binary outputs.  In the 1950s, computer scientists simulated the idea in their work, a hypothetical NN.
 
-\section{Yet Another Section}
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
+Over time, we have seen successive application of artificial intelligence in board games, because they are both understandable and complex.
 
-Duis eget diam. In est justo, tristique in, lacinia vel, feugiat eget,
-quam. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Fusce feugiat, elit ac placerat
-fermentum, augue nisl ultricies eros, id fringilla enim sapien eu
-felis. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia Curae; Sed dolor mi, porttitor quis,
-condimentum sed luctus. 
+Followed events chronologically:
+\begin{itemize}
+    \item  In the 50's, the investigation on the game of checkers stands out.
+    So learn by playing and giving a set of rules game as well a sense of direction and some parameters without including the weight of your importance.
+    Arthur Samuel developed software that helped the IBM computer get better at checkers,  the more it played.
+    With the premise of the possibility of scaling and transposing these machine learning techniques to other areas \cite{Samuel}.
+    \item Already in 1997, IBM's Deep Blue (chess-playing computer), capable of evaluating 200 million positions per second (twice as fast as the 1996 version), beat grandmaster Garry Kasparov.
+    \item And more recently in 2016, human intelligence head to head with machines, AlphaGo — AI program powered by Google. The game Go, is considered the oldest in the world and probably the most complex. Google DeepMinds AlphaGo combines reinforcement learning techniques with simulation so is powered with all types of Go matches, and then study, learn from them, and discover your own moves. It knows the rules, and discovers highly efficient creative moves never before thought of by humans \citet{Silver2017} .
+    
+    
+\end{itemize}
 
-\section{Summary}
+\espaco
+Due to the evolution of the processing power of computers, it is now possible to run computationally demanding algorithms in terms of calculations and/or the amount of data used \citet{history}.
+In this way, there was a path that made possible a new era, a revolution
+of Artificial intelligence
+called deep learning,
+that mimics neural networks
+of the human brain.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non
-ultricies nibh, ut cursus neque. Vestibulum mattis ac odio ac
-euismod. Integer posuere nibh odio, a fermentum massa iaculis
-sed. 
+\newpage
+\subsection{Perceptron}
 
-Mauris eu mattis erat, eget feugiat quam. Fusce ut
-justo sed lorem eleifend ornare ac vitae mi. Donec eu magna eget metus
-porta vulputate. Aenean elementum turpis gravida elit iaculis
-bibendum. 
+\paragraph{}The Perceptron is like an atom of artificial intelligence that performs computations to extract information or knowledge from input data \cite{Rosenblatt}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{figures/general-diagram-of-perceptron-for-supervised-learning_4.jpg}
+    \caption{Perceptron model representation}
+    \label{fig:PercMR}
+    \citet{perc}
+\end{figure}
+
+
+
+
+\section{Machine Learning types}
+Machine learning algorithms are
+categorized into three main categories:
+\begin{itemize}
+\item supervised learning \ref{SL}
+\item unsupervised learning
+\item reinforcement learning
+\end{itemize}
+
+\subsubsection{Supervised learning}\label{SL}
+
+\paragraph{}The process of creating the machine learning model involves having a dataset that contains the features and labels in order to use it to classify any given new point of data \citet{Burkov2020}.
+
+Within supervised learning we can divide into: 
+\begin{itemize}
+    \item  Classification performing as a category the class or label (y)
+    \item Regression if we consider as a class(y) a continuous variable
+\end{itemize}   
+ Examples: 
+ 
+ \textbf{Linear Regression}, assumption: the class is expected to be a linear combination \ref{LRform} of the features!  It could be adapted for higher dimensions.  
+ 
+ $f(X)=\beta_{0}+\beta_{1}X_{1}+\beta{2}X_{2}+...+\beta_{p}X_{p}$ \label{LRform}
+ 
+ \espaco
+ 
+
+There are two types of algorithms:
+\begin{itemize}
+    \item \textbf{Lazy} like:
+\begin{itemize}
+\item  K-Nearest Neighbours or KNN  (distance based technique)
+
+When a new point appears, we calculate the similarity (or distances, as in clustering) of the K-nearest Neighbours. Where k is a positive number, to obtain optimal value should use an error plot or accuracy plot.
+The class of our new input is assigned to the class most common, like voting system in democracy \citet{MULLER2019145}.
+
+\item Rule Based
+
+
+A technique widely used in healthcare in the 70s. However, it has its limitations in comparison with the techniques used today. Those limitations include high monetary cost, dependence on specialized human resources, and complexity of how to update the rules. Practical implementation constraints are illustrated in the table below. 
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{figures/nature.png}
+    \caption{Human evaluation vs different types of AI paradigms.}
+    \label{fig:Human and AI Approaches}
+    \cite{Yu2018}
+\end{figure}
+\item Naive Bayes Rules 
+its name comes from the Bayes theorem on which it is based, applies and calculates conditional probabilities and probabilities. Suitable for large and unknown datasets.
+Assumes that features are independent or unrelated between each other. Then the algorithm learns and collects information from each feature class individually.
+\end{itemize}
+    \item \textbf{Eager} like:
+\begin{itemize}
+\item Neural Networks
+\item SVMs
+Intends to maximize the decision boundary margin. The orange dots are the support vector, the points closer to the boundary of decision.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3]{figures/SVM.png}
+    \caption{Visual Explanation of SVM}
+    \label{fig:SVM}
+    \cite{video}
+\end{figure}
+When the problem is not linearly separable use \textbf{the kernel trick}:
+\begin{itemize}
+    \item Transition to a higher dimensional space — feature space
+    \item Get an optimal boundary
+    \item Return to input space
+\end{itemize}
+\begin{figure}[ht] \centering \includegraphics[scale=0.4]{figures/kerneltrick.jpg} \caption{Visual Explanation of the kernel trick} \label{fig:kernelTrick}
+\end{figure}
+
+
+
+\item Decision trees\\
+ 
+ Hierarchical learning (decomposes in subtrees),
+to build one:
+\begin{enumerate}
+\item Select feature for root node and create a branch for each possible feature value
+\item: split instances into subsets: one for each branch extending from the node
+\item Repeat for each branch, using only the instances that reach the branch
+\end{enumerate}
+A selected feature corresponds a question or 
+“test” to the database in order to subdivide data until obtaining a branch of the same class called pure leaves.
+The goal is to pick the most significant features to subdivide in the faster way possible (minimum number of tests), avoiding overfitting. Note that only 1 feature is picked by the tree if there are more than encodes the same information. The benefits comparing with another algorithms is ease of being understandable by the people, the ability to visualize beyond the algorithms doesn't variant to scaling of the data.
+\item Random Forests\\  
+Multiple decision trees (ensemble method)  , hierarchical learning, divide and conquer method.
+Bootstrapping of samples for each decision tree, and all decision trees, makes a prediction. In regression, makes an average of results. For the other side in classification, makes a soft voting that consist that:
+the most probable class, the result of the average of the probabilities of all the probabilities of the predictions of the decision trees, is chosen with the representative label \cite{Muller2017}.
+\item Gradient boosted regression trees:
+\begin{itemize}
+\item used for regression and classification
+\item considered one of the most powerful boosting algorithms and widely used on supervised learning, nevertheless, it is required to tune the parameters carefully. 
+\item  have a strong pre-pruning which results in shallow trees, typically no more than 5 levels deep consequently is smaller in memory and faster to predict. With more trees and n\texttt{\_}estimators allow more chances to correct mistakes on the training set. 
+\item make a serialization of trees with the aim of predicting the error value of the previous tree. And with the learning rate parameter, manage the intensity of correctness in previous trees to the definition in its final result.
+\end{itemize}
+
+ \end{itemize}
+\end{itemize}
+
+\begin{figure}[ht] \centering \includegraphics[scale=0.8]{figures/Models representation.jpg}\citet{taxonomy} \caption{Taxonomy of supervised learning algorithms} \label{fig:overviewML} \end{figure}
+
+In this project we focus, use and explore Naive Bayes and a bunch of supervised algorithms of the discriminative and discrete type according to the input data.
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+
+\espaco
+
+\begin{figure}[ht] \centering \includegraphics[scale=0.6]{figures/SLalgorithmsCharateristics.png} \caption{Main features of the algorithm } \label{fig:overview} \end{figure}
+
+In this image, we summarize the main features of the algorithms that stand out
+
+\section{Model Evaluation}
+\paragraph{} The common practice in the field is to evaluate the model to see if it has the desired performance. 
+
+\section{Pipeline steps of a project}
+\begin{itemize}
+\item  Collecting the data
+\item Get some features
+\begin{itemize}
+\item  Extract, Analyse and Select
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item Get a model
+\item Train a model
+\item Test the model
+\item Evaluate the model, adjust and repeat if necessary
+\end{itemize}
+
+It is worth pointing out that in case of data limitation, it is important to test with new data. In the evaluation phase, it is expected that:
+\begin{itemize}
+\item A model is able to generalize from seen data to unseen data.
+\item Is “Able” according to some metrics
+\end{itemize}
+
+Furthermore, there are statistical methods that allow us to assess the model in terms of predictions and get more information.
+
+\section{Evaluation process}
+
+\begin{itemize}
+\item We split the dataset into a training dataset and a test dataset. Under no circumstances, we should use the "test" dataset to train and perform evaluation.
+\end{itemize}
+ Otherwise, the data will be skewed. That may lead to the misdiagnosis of performance at levels higher than the real ones.
+\iffalse
+Nevertheless, in some cases like  medicine and biomedical (health in general) areas, there are pre-determined datasets for training and a new dataset(s) for testing.
+Typical general use case: Models based on the knowledge of n patients, trying to classify the status of other patients who will arrive.
+\fi
+Testing the model will take an example from dataset, evaluate it without adjusting the model.
+The evaluation result or prediction of the model will be compared with the groundtruth labels.
+\begin{itemize}
+\item The groundtruth labels are typically not given to the model to make the prediction.
+\item They are used to confirm if the prediction was correct or not.
+\end{itemize}
+
+Let us examine a simple example with two categorical classes:
+"yes" or "no"
+If a dataset example has a label "yes" and the model predicted as a "yes", the model as correctly classified the example.
+Otherwise, it is an erroneous prediction.
+
+For each input x with groundtruth class y we have:
+    Correctly discriminated/classified examples
+    Incorrectly discriminated/classified examples
+\espaco
+\begin{figure}[ht] \centering \includegraphics[scale=0.5]{figures/Confusion-matrix.png} 
+\caption{Confusion Matrix} \label{fig:confusionM}
+\citet{Sheng2020} \end{figure}
+
+From the data in the other table, we can deduce a set of metrics \citet{matrixAi}. 
+
+
+
+\begin{figure}[ht] \centering \includegraphics[scale=0.43]{figures/diagram.png} \caption{full matrix confusion table with metrics included}\citet{matrixC}  \label{fig:conf} \end{figure} 
+
+It is good practice to save this data (confusion matrix) because from it, we can calculate everything from these metrics \citet{Powers2011}.
+
+
+
+

@@ -1,0 +1,106 @@
+\chapter{Experimental Study}\label{chap:chap4}
+
+
+
+\section*{}
+\section{SMART database considerations }
+\paragraph{}This project consists of taking up the technique of diagnosing patients with DOC. For that, I had access to a dataset with 35 records of the assessment of this technique that took place in a hospital in London, where Professor Liliana Teixeira worked. Professor Liliana allowed me to access this dataset and was kind enough to explain how this technique works and clarify all the doubts that followed from reading the data and its particularities. The dataset has 147 columns of feature data. Many columns are repeated from 10 sessions that the technique uses for the evaluation of 8 modalities. There are 5 sensory modalities (gustatory, olfactory, auditory, visual and tactile), the rest are functional communication, wakefulness/arousal and motor function \cite{Gill-Thwaites2010}.
+In this way, 8 modalities are evaluated in 10 times, making up 80 features that enlarge the data set. The multiple assessments of the same modality are, often, synonymous with feature redundancy.
+The individual assessment of each session is done at the end of each session and this technique covers 2 evaluators, in 10 sessions and each of these is associated with the degree of certainty. In total we have over 40 columns/features.
+In addition, there is a subsequent evaluation where the assessors discuss and reach a consensus on the joint result for each session and the associated degree of certainty. So we have 20 more features.
+Of the other 7 features that remain, 2 are for patient identification and their evaluation order. These two features introduce noise to the model creation and not taken into consideration while creating supervised learning models.
+Another 2 columns correspond to the y or diagnostic labels (in case of 2 and 3 possible states).
+The labelling mode is shown in the following tables:
+\begin{table}[!htb]
+    
+    \begin{minipage}{.5\linewidth}
+      \caption{Classification with 2 states}
+      \centering
+       \begin{tabular}{|l|l|l|}
+\hline
+
+Label                 & Condition     & Quantity \\ \hline
+1          & Vegetative State          & 10  \\ \hline 
+2 & Minimally Conscious State        & 25  \\ \hline
+\end{tabular}%
+\label{tab:2StatesClassification}
+
+\label{tab:Doc2states}
+    \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+      \centering
+        \caption{Classification with 3 states}
+        \begin{tabular}{|l|l|l|l}
+\hline
+Label & Condition & Quantity \\ \hline
+1       & VS      & 10  \\ \hline
+2      & MCS-     & 11  \\ \hline
+3      & MCS+     & 14  \\ \hline
+\end{tabular}%
+
+\label{tab:DiagnosticLabeling}
+    \end{minipage} 
+\end{table}
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\espaco
+\paragraph{}The \textbf{time} variable is the time interval, in months, between brain injury and SMART assessment. Age refers to the patient's age. These features are continuous, so, in the following table, you can check information about these: 
+
+\begin{table}[ht]
+\centering
+\caption{Describe Age and Time}
+\resizebox{.7\linewidth}{!}{%
+
+\begin{tabular}{|l|l|l|l|l|}
+
+\hline
+Features & Mean & Minimum & Maximum & Median\\ \hline
+Time (in months)     & 8,2  &3      & 70,0 & 52,0   \\ \hline
+Age (in years)     & 49,7 & 19,0    & 77,0 & 6,0    \\ \hline
+ 
+\end{tabular}%
+}
+\label{tab:Time&Age}
+\end{table}
+
+\paragraph{} The other two features are the patient's gender and the etiology/origin of the disease, they are binary with the following meaning:
+\begin{table}[!htb]
+    
+    \begin{minipage}{.5\linewidth}
+      \caption{Gender code definition}
+      \centering
+       \begin{tabular}{|l|l|l|l}
+       \cline{1-3}
+Label & Gender & Quantity \\ \hline
+1     & Female & 7  \\ \hline
+2     & Male   & 28  \\ \hline
+\end{tabular}%
+
+
+
+
+\label{tab:Gender}
+    \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+      \centering
+        \caption{Etiology code definition}
+        \begin{tabular}{|l|l|l|l}
+\hline
+
+Label & Etiology      & Quantity \\ \hline
+1     & Traumatic     & 11  \\ \hline
+2     & Not traumatic & 24  \\ \hline
+\end{tabular}%
+
+\label{tab:Etiology}
+    \end{minipage} 
+\end{table}

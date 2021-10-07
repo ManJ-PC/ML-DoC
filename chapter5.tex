@@ -1,75 +1,61 @@
+
+
+
+
 \chapter{Conclusions and Future Work} \label{chap:concl}
 
 \section*{}
 
-Nullam eleifend condimentum nibh. Integer leo nibh, consequat eget,
-mollis et, sagittis ac, felis. Duis viverra pede in pede. Phasellus
-molestie placerat leo. Praesent at tellus a augue congue molestie.
-Integer eu ante pellentesque, viverra orci vitae, facilisis
-risus. Nunc eget pulvinar orci.
 
-Proin sed justo eu sapien eleifend elementum. Pellentesque habitant
-morbi tristique senectus et netus et malesuada fames ac turpis
-egestas.  Praesent id lobortis magna, ut interdum enim.
+\section{Data exploration and analysis}
+
+Upon close examination of the data summary, we can surmise that the classification for the two states is unbalanced. \ref{tab:2StatesClassification} .
+
+And it turns out that there are fields with null values, 111 in total. This happens when the patient is blind or the gustatory sensory system is not possible to assess. It happens in the situations like patients are fed through a gastric tube or other alternative feeding mechanisms such as transcheostemia, etc.
+All 'NA' are changed and assigned a non-significant value: -1. 
+The reason for doing so is that data is precious and scarce, and removing records would further shorten our dataset. If we do not have sufficient. 
+Without data, you cannot make the algorithm make a perfect model.
+The ID and order insignificant columns are removed.
+And the column of the diagnosis made by human evaluators, our label, is separated from X for an isolated panda's series y.
+
+\section{Machine Learning}
+
+X and y are split into training and testing subsets.
+Taking care to stratify the data in relation to the label (stratify=y).
+This is to ensure that all classes are proportional in relation to the training side to the testing side, avoiding the risk of poorly trained classes.
+\clearpage
 
 \section{Results}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam non
-felis sed odio rutrum ultrices. Donec tempor dolor. Vivamus justo
-neque, tempus id, ullamcorper in, pharetra non, tellus. Praesent eu
-orci eu dolor congue gravida. Sed eu est. Donec pulvinar, lectus et
-eleifend volutpat, diam sapien sollicitudin arcu, a sagittis libero
-neque et dolor. Nam ligula. Cras tincidunt lectus quis nunc. Cras
-tincidunt congue turpis. Nulla pede velit, sagittis a, faucibus vitae,
-porttitor nec, ante. Nulla ut arcu. Cras eu augue at ipsum feugiat
-hendrerit. Proin sed justo eu sapien eleifend elementum. Pellentesque
-habitant morbi tristique senectus et netus et malesuada fames ac
-turpis egestas. Vivamus quam lacus, pharetra vel, aliquam vel,
-volutpat sed, nisl. 
+The project repository is available at: https://github.com/ManJ-PC/ML-DoC
 
-Nullam erat est, vehicula id, tempor non, scelerisque at,
-tellus. Pellentesque tincidunt, ante vehicula bibendum adipiscing,
-lorem augue tempor felis, in dictum massa justo sed metus. Suspendisse
-placerat, mi eget molestie sodales, tortor ante interdum dui, ac
-sagittis est pede et lacus. Duis sapien. Nam ornare turpis et
-magna. Etiam adipiscing adipiscing ipsum. Fusce sodales nisl a
-arcu. Cras massa leo, vehicula facilisis, commodo a, molestie
-faucibus, metus. Suspendisse potenti. Duis sagittis. Donec porta. Sed
-urna. Maecenas eros. Vivamus erat ligula, pharetra sit amet, bibendum
-et, fermentum sed, dolor. 
+\espaco
+\begin{figure}[ht] \centering \includegraphics[scale=0.5]{figures/Results.png} 
+\caption{Confusion Matrix and ROC curve of a Bunch of Algorithms} \label{fig:results}
+ \end{figure}
+ 
+
+\begin{figure}[ht] \centering \includegraphics[scale=0.5]{figures/ResultsNN.png} 
+\caption{Neural Network, Confusion Matrix and ROC curve resulting from the iterative method with 100 epochs, 25 neurons and ADAM optimizer} \label{fig:resultsNN}
+ \end{figure}
+ 
 
 \section{Further Work}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
-tempor tristique risus. Suspendisse potenti. Fusce id eros. In eu
-enim. Praesent commodo leo. Nullam augue. Pellentesque tellus. Integer
-pulvinar purus a dui convallis consectetuer. In adipiscing, orci vitae
-lacinia semper, sapien elit posuere sem, ac euismod ipsum elit tempus
-urna. Aliquam erat volutpat. Nullam suscipit augue sed
-felis. Phasellus faucibus accumsan est. 
 
-Aliquam felis justo, facilisis sit amet, bibendum ut, tempus ac,
-dolor. Sed malesuada. Nunc non massa. In erat. Nulla
-facilisi. Phasellus blandit, est in accumsan cursus, libero augue
-elementum leo, vitae auctor mauris nisl ac tortor. Cras porttitor
-ornare elit. Fusce at lorem. Sed lectus tortor, vestibulum id, varius
-a, condimentum nec, lectus. Maecenas in nisi et magna pretium
-aliquam. Pellentesque justo elit, feugiat nec, tincidunt a, dignissim
-vel, ipsum. Sed nunc. Vestibulum ante ipsum primis in faucibus orci
-luctus et ultrices posuere cubilia Curae; Aliquam tempus rhoncus
-leo. Donec neque quam, cursus sit amet, ultricies varius, semper non,
-pede. Donec porttitor. Sed aliquet feugiat elit.  
+
+The project can be futher developed to find correlation of features in algorithms. Divide in two subgroups based on etiology. We can also see if it is possible to do less sessions to minimize resources of this tecnique(human resources, time spend). Since it may no longer be adding added value to the data.
+\begin{itemize}
+\item A broader view of classification in 3 possible stages (vegetative state, minimal state of consciousness minus and plus)
+\item Iterate over the various machine learning algorithms
+\item Unification of similar features \cite{9202409}
+\item Predict the correlation of selected features and limit the number of sessions needed
+\item Use of diagnostic tools to sensory data acquisition
+\item Test the model with new and real data where it does not contain as rather sessions
+\item Automate the entire process, acquire technological tools that allow you to track patients regularly
+\end{itemize}
+
 
 \vspace*{12mm}
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-tellus pede, auctor ut, tincidunt a, consectetuer in, felis. Mauris
-quis dolor et neque accumsan pellentesque. Donec dui magna,
-scelerisque mattis, sagittis nec, porta quis, nulla. Vivamus quis
-nisl. Etiam vitae nisl in diam vehicula viverra. Sed sollicitudin
-scelerisque est. Nunc dapibus. Sed urna. Nulla gravida. Praesent
-faucibus, risus ac lobortis dignissim, est tortor laoreet mauris,
-dictum pellentesque nunc orci tincidunt tellus. Nullam pulvinar, leo
-sed vestibulum euismod, ante ligula elementum pede, sit amet dapibus
-lacus tortor ac nisl. Morbi libero. Integer sed dolor ac lectus
-commodo iaculis. Donec ut odio.  
+

@@ -1,69 +1,67 @@
-\chapter{Diagnostic tools} \label{chap:sota}
+\chapter{Diagnostic tools using Machine Learning} \label{chap:sota}
 \label{chap:chap2}
 \section*{}
 
+\section{Diagnostic tools} \label{Diagnostic}
 
+\paragraph{}Neuroscientific technologies use experimental methods to study the patients' brain processes. Those methods include neuroimaging, psychophysical techniques or psychological tests which are used to study processes such as learning, attention, memory, or emotion \cite{Corchs2019}.
+\espaco
 
+The following methods stand out:
 
-
-
-
-
-
-Project Chapter:
-https://3.basecamp.com/4485869/buckets/16586760/schedules/2560106877?on=2020-04-06
  
-
-\section{Introduction}
-
+\begin{itemize}
 
 
+\item Electroencephalogram (EEG)
 
-\section{A Section}\label{sec:theoback}
+Electroencephalography is a simple, non-invasive technique based on recording and evaluating brain activity using electrodes placed on the skull surface \citep{Avilov2020} \citep{Da2019}.The (EEG) is the record that results from the measurement of the electrical potentials of the brain \cite{Bender2015} \citep{Xu2020}. EEG shows the electrical fluctuation in the different locations of the cortex  \citep{Zheng2016}. However, it has the disadvantage of having an insufficient resolution to register the neuronal activity in deeper brain structures, such as the \textit{nucleus accumbens} related to the processing of emotions\cite{Lang2010}. %\citep{8701676}. 
 
-\emph{Scalable Vector Graphics}\index{SVG}\index{XML!SVG}
+Study using Mismatch Negativity (MMN) tomography technique resulting in classification of patients with DOC in figure \ref{ferramentaMMN}
+\begin{figure}[ht!]
+\includegraphics[scale=0.7]{figures/MMN-topography-in-patients-with-disorders-of-consciousness-and-in-healthy-controls-The_W640.jpg}
+\caption[DOC patient's MNN topography versus healthy control patients]{ MMN topography in healthy controls patients versus DOC’s patients. Observation of t test maps (deviation and standard trials) in A  comparing with  similar maps obtained in France between 2008 and 2011\cite{King2011}
+\cite{Boly2011}} %legenda imagem no indice e no texto
+\label{ferramentaMMN}
+\end{figure}
 
-nulla\footnote{This is a footnote.}. 
+\item  (Functional) Magnetic Resonance
 
-\subsection{A Subsection} \label{batik} 
+ It is a method of diagnosis and fundamental research in market research analysing emotions planning surgery brain mapping neurosciences \citep{fmri}. It allows the analysis of the subjects' response to different activities or stimuli. Magnetic resonance imaging is a non-invasive technique used to obtain information about the subjects' response to different stimuli (very common in research and analysis of neurological diseases such as Alzheimer's Disease and also for soft tissue injuries and inflammation). This technique evaluates the activation and the emotional state of the subject when exposed to certain stimuli \cite{noauthor_fmri_nodate}. 
+ 
+ 
+\item  GSR (galvanic skin response)
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc eu
-nulla. Pellentesque vitae nibh ultrices quam iaculis
-convallis. Aliquam purus eros, varius eget, volutpat sodales,
-imperdiet nec, lacus. Curabitur in elit sed sem rutrum posuere. Class
-aptent taciti sociosqu ad litora torquent per conubia nostra, per
-inceptos himenaeos. Duis sem. Praesent ultricies odio vel
-sapien. Integer faucibus malesuada libero. Cras semper, dolor id
-ullamcorper varius, magna risus volutpat felis, id pellentesque nulla
-ante at erat. Integer sodales. 
+Measurement of the galvanic response is done by placing
+electrodes on the fingers. Studies measure resistance
+skin and its conductance.
 
-Quisque sit amet odio. In at risus sit amet turpis interdum
-posuere. Maecenas iaculis vehicula sem. Ut leo arcu, malesuada vel,
-imperdiet id, dignissim a, purus. Duis eleifend, lectus non venenatis
-dignissim, risus libero imperdiet mi, nec gravida massa libero sed
-mauris. Nullam lobortis libero non sapien. Integer convallis iaculis
-erat. Morbi dictum. Ut ultrices pellentesque velit. Cras ac
-ante. Etiam in neque tincidunt lacus gravida vehicula. Proin et nisi. 
+A GSR amplifier applies constant tension to the skin using low voltage that the individual cannot
+perceive it through electrodes. The current generated in the
+skin by tension can be detected and recorded. The output of the GSR amplifier determines the conductance.
+The conductance of the skin gives feedback on the body's response to the stimulus; it is widely used in post-coma and coma phases
+\cite{Altntop2021,Luaute2018}.
 
-\section{Another Section}
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
+\item  Eye-tracking
 
-\section{Summary}
+ Eye-tracking refers to recording the movements of an individual's eye while examining a visual stimulus. In broad, it is responsible for measuring eye movements using a camera that quantifies them. Modern eye trackers record eye position and movement using contrast to locate the central point of the pupil and create a reflection of the cornea using infrared light. It is possible to analyse of the position of the gaze and the movement of the eyes in three-dimensional environments \citep{Taherkhani2012}.
+Eye-tracking techniques apply to domains where interaction and interests matter,
+looking to sell or immerse to improve the customer or user experience. In medicine, it is essential to recognize behaviours and patterns to investigate further and characterize\cite{Ting2014}.
 
-Vivamus non nunc nec risus tempor varius. Quisque bibendum mi at
-dolor. Aliquam consectetuer condimentum risus. Aliquam luctus pulvinar
-sem. Duis aliquam, urna et vulputate tristique, dui elit aliquet nibh,
-vel dignissim magna turpis id sapien. Duis commodo sem id
-quam. Phasellus dolor. Class aptent taciti sociosqu ad litora torquent
-per conubia nostra, per inceptos himenaeos. 
+
+\item  Face reading
+
+ Facial expressions are one of the most robust  visual methods for conveying emotions. The face plays a crucial role in the cognitive processes of individuals, since the signs that show facial expressions denote internal states or emotions. The analysis of facial expressions provides valuable information when combined with other tools that allow sensory information collection, such as eye-tracking or EEG.
+
+\end{itemize}
+
+\section{General idea of application}
+It is common in health areas such as medicine and biomedical to have pre-determined datasets for training and a new dataset(s) for testing.
+Typical general use case: Models based on the knowledge of n patients, trying to classify the status of other patients who will arrive \citep{MULLER2019145}.
+
+It is common in medical science to have pre-determined datasets for training and a new dataset(s) for testing.		
+A typical use case is, for instance, a model based on the knowledge of n patients, trying to classify the status of other patients who will arrive \citep{MULLER2019145}.		
+The raise of high-performance computing (which includes GPU's, CPU's, high-speed interconnect, memory, libraries, storage, compilers, etc.) 	
+increased the speed of algorithms that would generally take months to be completed, even at a distance, as in the case of cloud computing. \ref{Cc} \cite{ai}.
